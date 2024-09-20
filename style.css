@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px ;
+    background-color: white;
+}
+
+.logo{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+nav li a{
+    color: #252525;
+}
+
+.section-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.searchbar-img{
+    width: 200px;
+    height: 230px;
+}
+
+
+
+.searchbar-text{
+    display: flex;
+    flex-direction: row;
+    font-size: 55px;
+    margin-left: 150px;
+    position: relative;
+    z-index: 0;
+    gap: 30px;
+}
+
+.searchbar-text-start{
+    font-weight: 900;
+}
+
+.searchbar-text-end{
+    font-weight: 900;
+    color: #FFC933;
+}
+
+.app-button-group{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.app-button-group a img {
+    width: 200px;
+    height: 66px;
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    font-size: 20px;
+    color: #74758C;
+}
+
+.copy p:nth-child(2){
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.app-button{
+    width: 67px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.mobile-button{
+    display: flex;
+    justify-content: center;
+    width: 220px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.navbar-icon .menu-icon input{
+    border: none;
+    font-size: 35px;
+    background-color: transparent;
+}
+
+@media(max-width:750px) {
+    header{
+        align-items: center;
+    }
+    .NavBar li {
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: x-large;
+    }
+
+    .searchbar{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .searchbar-text-start,
+    .searchbar-text-end{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .app-button-group a img {
+        display: none;
+    }
+
+
+    .searchbar-text{
+        font-size: 55px;
+        margin-left: 0;
+        display: block;
+        flex-direction:row;
+        align-items: center;
+    }
+
+}
+
+@media(min-width:751px) {
+    .searchbar-content{
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: white;
+        width: 700px;
+        height: 80px;
+        border-radius: 150px;
+        box-shadow: inset 0px -5px 12px 9px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+
+    .searchbar-img{
+        width: 250px;
+        height: 280px;
+        margin-right: 20px;
+        position: absolute;
+        left: -80px;
+        top: 70%;
+        transform: translateY(-70%);
+        z-index: 1;
+        }
+
+    .navbar-icon{
+        display: none;
+    }
+
+    .mobile-button{
+        display: none;
+    }
+}
+
+
+
+
